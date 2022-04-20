@@ -1,0 +1,53 @@
+#header {
+    text-align: center;
+}
+#header img {
+    float: right;
+}
+#footer {
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
+}
+#menu {
+    font-weight: bold;
+    background-color: #ddd;
+    font-size: large;
+}
+#menu ul {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0 0 50% 5px;
+    font-weight: normal;
+    background-color: #ddd;
+    width: 150px;
+    line-height: 2em;
+}
+#content {
+    margin-left: 120px;
+}
+.message {
+    color: #390;
+    padding: 0px 80px;
+    font-weight: bold;
+    text-align: left;
+}
+.error {
+    color: #f00;
+}
+.table {
+    padding: 0 20px;
+}
+.table tr td {
+    padding: 5px 20px;
+}
+th {
+    padding: 5px 20px;
+    text-align: left;
+}
+.sub {
+    padding: 5px 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
