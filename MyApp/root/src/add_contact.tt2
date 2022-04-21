@@ -3,8 +3,8 @@
 <form method="post" action="[% c.uri_for('create_contact') %]">
 <table class="table">
     <tr><td>Имя:</td><td><input type="text" name="first_name"></td></tr>
-    <tr><td>Фамилия:</td><td><input type="text" name="last_name"></td></tr>
-    <tr><td>Телефон:</td><td><input type="text" name="phone"></td></tr>
+    <tr><td>Фамилия:</td><td><input type="text" name="last_name" required></td></tr>
+    <tr><td>Телефон:</td><td><input type="text" name="phone" required></td></tr>
 </table>
 <input class="sub" type="submit" name="Submit" value="Добавить">
 </form>

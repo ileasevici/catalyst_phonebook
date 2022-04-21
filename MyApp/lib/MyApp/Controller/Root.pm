@@ -51,8 +51,8 @@ sub create_contact :Chained('base') :PathPart('create_contact') :Args(0) {
     my ($self, $c) = @_;
  
     my $first_name = $c->request->params->{first_name} || 'N/A';
-    my $last_name = $c->request->params->{last_name} || 'N/A';
-    my $phone = $c->request->params->{phone} || 'N/A';
+    my $last_name = $c->request->params->{last_name};
+    my $phone = $c->request->params->{phone};
  
     my $book = $c->model('DB::Book')->create({
             first_name => $first_name,
@@ -75,8 +75,8 @@ sub change_contact :Chained('base') :PathPart('change_contact') :Args(0) {
     my ($self, $c) = @_;
 
     my $first_name = $c->request->params->{first_name} || 'N/A';
-    my $last_name = $c->request->params->{last_name} || 'N/A';
-    my $phone = $c->request->params->{phone} || 'N/A';
+    my $last_name = $c->request->params->{last_name};
+    my $phone = $c->request->params->{phone};
 
     $update_id->update ({
         first_name => $first_name,
